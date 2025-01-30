@@ -1,0 +1,20 @@
+{
+  "name": "FS Ember assets redirect",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Redirects FS Ember assets of an account to locally running server",
+  "background": {
+    "scripts": ["redirect.js"]
+  },
+  "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*",
+        "tabs",
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        "dist/*"
+    ]
+}
